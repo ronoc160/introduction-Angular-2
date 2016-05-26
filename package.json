@@ -1,11 +1,9 @@
 {
   "name": "angular2-tutsplus",
+  "description": "some shit app",
   "version": "1.0.0",
   "engines": {
    "node": "v6.1.0"
- },
- "repository": {
-   "url": "https://github.com/ronoc160/introduction-Angular-2"
  },
   "scripts": {
     "postinstall": "npm run typings install",
@@ -13,7 +11,9 @@
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "typings": "typings"
+    "typings": "typings",
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+"heroku-postbuild": "echo This runs afterwards."
   },
   "license": "ISC",
   "dependencies": {
