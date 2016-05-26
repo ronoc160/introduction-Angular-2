@@ -5,7 +5,7 @@
    "node": "v6.1.0"
  },
  "repository": {
-   "url": "git://github.com/ronoc160/introduction-Angular-2"
+   "url": "git://github.ronoc160/introduction-Angular-2.git"
  },
   "scripts": {
     "postinstall": "npm run typings install",
