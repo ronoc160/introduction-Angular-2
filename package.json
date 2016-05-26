@@ -1,6 +1,12 @@
 {
   "name": "angular2-tutsplus",
   "version": "1.0.0",
+  "engines": {
+   "node": "v6.1.0"
+ },
+ "repository": {
+   "url": "git://github.com/ronoc160/introduction-Angular-2"
+ },
   "scripts": {
     "postinstall": "npm run typings install",
     "tsc": "tsc",
