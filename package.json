@@ -1,34 +1,35 @@
 {
   "name": "angular2-tutsplus",
-  "description": "some shit app",
   "version": "1.0.0",
   "engines": {
-   "node": "v6.1.0"
- },
+    "node": "v6.1.0"
+  },
+  "repository": {
+    "url": "https://github.com/ronoc160/introduction-Angular-2"
+  },
   "scripts": {
     "postinstall": "npm run typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "typings": "typings",
-    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
-"heroku-postbuild": "echo This runs afterwards."
+    "typings": "typings"
   },
   "license": "ISC",
   "dependencies": {
-    "angular2": "2.0.0-beta.3",
+    "angular2": "2.0.0-beta.16",
+    "es6-promise": "^3.2.1",
+    "es6-shim": "^0.33.13",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-alpha.14",
     "systemjs": "0.19.6",
-    "es6-promise": "^3.0.2",
-    "es6-shim": "^0.33.3",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.0",
-    "zone.js": "0.5.11"
+    "zone": "^0.3.4",
+    "zone.js": "^0.5.8"
   },
   "devDependencies": {
     "concurrently": "^1.0.0",
     "lite-server": "^2.0.1",
     "typescript": "^1.7.5",
-    "typings":"^0.6.8"
+    "typings": "^0.6.8"
   }
 }
